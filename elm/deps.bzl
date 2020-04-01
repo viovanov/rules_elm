@@ -4,15 +4,15 @@ def elm_register_toolchains():
     _http_archive(
         name = "com_github_elm_compiler_linux",
         build_file_content = """exports_files(["elm"])""",
-        sha256 = "e44af52bb27f725a973478e589d990a6428e115fe1bb14f03833134d6c0f155c",
-        urls = ["https://github.com/elm/compiler/releases/download/0.19.1/binary-for-linux-64-bit.gz"],
+        sha256 = "a44cfd98f384c8ae95f48c3642976273667cb228b7977179b22b1d3934e7a92f",
+        urls = ["https://github.com/viovanov/rules_elm/releases/download/elm-0.19.1-files/binary-for-linux-64-bit.zip"],
     )
 
     _http_archive(
         name = "com_github_elm_compiler_mac",
         build_file_content = """exports_files(["elm"])""",
-        sha256 = "05289f0e3d4f30033487c05e689964c3bb17c0c48012510dbef1df43868545d1",
-        urls = ["https://github.com/elm/compiler/releases/download/0.19.1/binary-for-mac-64-bit.gz"],
+        sha256 = "6b70089d17100fa55215960b9e2dd7deb02e0a2dd1c8ad3fc4e291c335082278",
+        urls = ["https://github.com/viovanov/rules_elm/releases/download/elm-0.19.1-files/binary-for-mac-64-bit.zip"],
     )
 
     _http_archive(
