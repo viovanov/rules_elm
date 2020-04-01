@@ -60,8 +60,8 @@ with open(os.path.join(PACKAGES_DIR, "versions.dat"), "wb") as f:
         )
 
 # Cause a hard failure in case Elm tries to bypass our packages.
-for root, dirs, files in os.walk("elm-home"):
-    os.chmod(root, 0o500)
+# for root, dirs, files in os.walk("elm-home"):
+#     os.chmod(root, 0o500)
 
 
 # Convert Bazel compilation mode to flags for 'elm make'.
